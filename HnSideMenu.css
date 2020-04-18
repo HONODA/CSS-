@@ -1,0 +1,69 @@
+:root{
+	--width: 200px;
+}
+.HnSideMenu{
+	transition:0.25s ease-out;
+	-webkit-transition:0.25s ease-out; 
+}
+
+/**/
+.HnSideMenu > .SideMenuContent{
+	transition:0.25s ease-out;
+	-webkit-transition:0.25s ease-out; 
+}
+/*This is a Bar Style*/
+.HnSideMenu > .SideMenuContent > label{
+	  background:#ecdfdf;
+	  border-radius:15px;
+	  border-top-left-radius: 0px;
+	  border-bottom-left-radius: 0px;
+      color: rgb(230, 205, 67);
+      cursor: pointer;
+      display: block;
+      font-family: Courier New;
+      font-size: 25px;
+      font-weight: bold;
+      width: 70px;
+      height: 50px;
+      line-height: 35px;
+      text-align: center;
+      text-shadow: 0 -4px;
+
+}
+/*This is Title and Content*/
+.HnSideMenu > .SideMenuContent > aside{
+	position:absolute;
+	top:0;
+	bottom:0; 
+	left:-190px;
+	width:200px;
+	background:#ecdfdf;
+	transition:0.25s ease-out; 
+	-webkit-transition:0.2s ease-out;
+}
+.HnSideMenu > #hnside{
+	position:absolute;
+	top:0;
+	bottom:0; 
+	left:-190px;
+	width:200px;
+	background:#000000;
+
+}
+/*This is a input  Bar Style*/
+.HnSideMenu > #hnside{
+	display:none;
+
+}
+/*This is a input Bar Style*/
+.HnSideMenu > #hnside:checked + .SideMenuContent > aside{
+	left:0px; 
+ 
+}
+/*This is a input Bar Style*/
+#hnside:checked + .SideMenuContent{
+	padding-left:190px;
+}
+.HnSideMenu > .SideMenuContent > aside > h1 {
+	text-align: center;
+}
